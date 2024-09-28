@@ -1,0 +1,14 @@
+name: CMDcustomBlock
+version: '${project.version}'
+main: tencer.quangdev05.cmdcustomblock.CMDcustomBlock
+api-version: '1.17'
+load: STARTUP
+authors: [QuangDev05]
+description: Plugin custom CMD khi đào block tùy chỉnh
+website: https://github.com/QuangDev05
+commands:
+  cmdcb:
+    description: Reload the plugin configuration.
+    usage: /<command> reload
+    permission: cmdcustomblock.reload
+    permission-message: Bạn không có quyền tải lại plugin.

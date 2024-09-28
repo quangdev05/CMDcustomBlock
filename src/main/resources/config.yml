@@ -1,0 +1,12 @@
+blocks:
+  exampleBlock1:
+    block: DIAMOND_BLOCK.
+    command: "give %player% diamond 1."
+    WorldBlackList:
+      - world_nether
+      - world_the_end
+  exampleBlock2:
+    block: GOLD_BLOCK.
+    command: "broadcast. %player% đã phá block vàng!"
+    WorldBlackList:
+      - world
