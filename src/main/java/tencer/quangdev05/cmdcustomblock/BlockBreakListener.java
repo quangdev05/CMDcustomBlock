@@ -33,7 +33,6 @@ public class BlockBreakListener implements Listener {
                 String command = config.getString("blocks." + key + ".command");
 
                 if (blockType.toString().equalsIgnoreCase(blockName) && !worldBlackList.contains(worldName)) {
-                    // Chạy lệnh console khi block bị phá
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player%", event.getPlayer().getName()));
                 }
             }
