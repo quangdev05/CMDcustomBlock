@@ -18,10 +18,8 @@ public class CMDcustomBlock extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        // Kiểm tra và tạo file config.yml nếu nó không tồn tại
         createConfig();
 
-        // Đăng ký sự kiện
         getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
         getLogger().info("CMDcustomBlock đã được bật!");
     }
@@ -31,7 +29,6 @@ public class CMDcustomBlock extends JavaPlugin implements Listener {
         getLogger().info("CMDcustomBlock đã bị tắt!");
     }
 
-    // Lệnh /cmdcb reload
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("cmdcb")) {
